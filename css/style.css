@@ -1,0 +1,455 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*section*/
+
+.section {
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+	width: 100%;
+    height: 100vh;
+    min-height: 820px;
+
+	overflow: hidden;
+
+	background: url(../images/back.jpg) center no-repeat;
+
+	-webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+
+/*container*/
+
+.container {
+	width: 100%;
+	max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    overflow: hidden;
+}
+
+/*Header*/
+
+.header{
+	width: 100%;
+	display: flex;
+	height: 75px;
+
+}
+
+.header__items {
+
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+
+	width: 490px;
+	text-align: left;
+}
+
+.header__logo {
+	margin: 20px 40px;
+	margin-left: 0;
+
+	width: 50px;
+	height: 50px;
+}
+
+.header_item {
+	width: 33%;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+.header__title {
+	width: 100%;
+	text-align: center;
+
+	position: relative;
+	margin-top: 35px;
+	
+	color: white;
+	font-size: 20px;
+	font-weight: 300;
+	text-decoration: none;
+
+	border-bottom: 1px solid white;
+
+	z-index: 1;
+
+	transition: background-color .3s linear, color .3s linear;
+}
+
+
+.header__title:hover {
+	background-color: #5b5b5a;
+	color: #ff5e26;
+}
+
+/*Mobile menu*/
+
+.header__menu__mobile {
+	width: 100%;
+	position: relative;
+	text-align: right;
+	display: none;
+}
+
+
+.header__items__burger {
+	position: relative;
+	display: flex;
+	margin-right: 0;
+	margin-left: auto;
+
+	width: 40px;
+	height: 40px;
+
+	background: #fff;
+
+	border-radius: 50px;
+	margin-top: 30px;
+	
+}
+
+.header__menu__mobile span {
+	transform: translateY(20px) translateX(10px);
+	transition-duration: .3s;
+}
+
+
+.header__menu__mobile span,
+.header__menu__mobile span:before, 
+.header__menu__mobile span:after  {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: #222;
+}
+
+.header__menu__mobile span:before, 
+.header__menu__mobile span:after {
+	transition-duration: .3s;
+	content: "";
+}
+
+.header__menu__mobile span:before {
+	transform: translateY(-6px);
+}
+
+.header__menu__mobile span:after {
+	transform: translateY(5px);
+}
+
+.header__items__burger.active span {
+	position: relative;
+	left: -2px;
+	width: 0;
+	height: 0px;
+	background: #222;
+}
+
+.header__items__burger.active span:before {
+	transition-duration: .3s;
+	width: 25px;
+	transform: rotate(-45deg);
+	position: absolute; 
+}
+
+
+.header__items__burger.active span:after {
+	transition-duration: .3s;
+	width: 25px;
+	transform: rotate(45deg);
+	position: absolute; 
+}
+/*adventure*/
+
+
+.adventure__items {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.adventure__title {
+	width: 100%;
+	display: flex;
+
+	font-family: 'Permanent Marker', cursive;
+	font-size: 90px;
+	color: white;
+	text-align: left;
+	line-height: 1;
+}
+
+.adventure__description {
+	width: 100%;
+	color: white;
+	text-align: left;
+}
+
+.adventure__description__text {
+	font-family: 'Open Sans', sans-serif;
+	width: 500px
+}
+
+/*adventure__buttom*/
+
+.adventure__buttom {
+	margin-top: 50px;
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+
+.adventure__buttom__block {
+	position: relative;
+	width: 300px;
+	display: flex;
+}
+
+.adventure__buttom__img {
+	max-width: 300px;
+}
+
+
+.adventure__buttom__text {
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	top: 23px;
+	left: 50px;
+
+
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	font-weight: 700;
+
+	transition: color .2s linear
+}
+
+.adventure__buttom__text:hover {
+	color: #ff5e26;
+}
+
+/*SLider*/
+
+.slider__body{
+	width: 600px;
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.slider__container {
+	margin-top: 50px;
+	overflow: hidden;
+	
+}
+
+.slider__track {
+	
+	display: flex;
+	transition: .2s;
+}
+
+.slider__item:nth-child(3n+1) {
+	
+}
+
+.slider__item:nth-child(3n+2) {
+	
+}
+
+.slider__item:nth-child(3n+3) {
+	
+}
+
+.slider__item {
+	height: 300px;
+}
+/*social*/
+
+.social {
+	width: 100%;
+	max-width: 1230px;
+
+    margin: 0 auto;
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	margin-top: auto;
+}
+
+
+.social__shape {
+	margin-top: auto;
+	max-width: 400px;
+}
+
+.social__icons{
+	position: relative;
+	display: flex;
+	top: 150px;
+}
+
+.social__icon {
+	position: relative;
+
+	left: 60px;
+
+	margin-right: 15px;
+
+	width: 40px;
+	height: 40px;
+
+	z-index: 1;
+}
+
+
+@media (max-width: 1230px){
+
+}
+
+@media (max-width: 990px) {
+	/*section*/
+
+	.section {
+		background: url(../images/back-2.jpg) center no-repeat;
+	}
+
+	/*header*/
+
+	.header__items {
+		width: 100%;
+		text-align: center;
+	}
+
+	/*adventure*/
+
+	.adventure__title {
+		justify-content: center;
+	}
+
+	.adventure__description__text{
+		margin: 0 auto;
+	}
+
+	.adventure__buttom {
+		display: flex;
+		position: relative;
+	}
+
+	.adventure__buttom__text {
+		width: 100%;
+		display: flex;
+		text-align: center;
+
+		justify-content: center;
+		left: 0;
+		
+		text-decoration: none;
+		color: black;
+		font-weight: 700;
+	}
+
+	.adventure__buttom__block {
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	.adventure__buttom__img {
+		margin: 0 auto;
+	}
+
+	
+}
+
+@media (max-width: 770px) {
+	/*adventure*/
+
+	.adventure__buttom__text {
+		font-size: 20px;
+	}
+
+	.header {
+		position: relative;
+		display: flex;
+	}
+
+	.header__items {
+		display: none;
+
+		transition-duration: .3s;
+		transition-timing-function: ease-in-out;
+	}
+
+	.header__items.active {
+		transition-duration: .3s;
+		transition-timing-function: ease-in-out;
+
+		display: flex;
+		width: 80%;
+		position: relative;
+	}
+
+	.header__menu__mobile.active {
+		width: 10%;
+	}
+
+	.header_item {
+	
+	}
+
+	/*Header mobile*/
+
+	.header__menu__mobile {
+		display: flex;
+	}
+}
+
+@media (max-width: 575px) {
+	
+	/*header*/
+	.header__logo {
+		margin: 20px 0;
+		margin-right: 10px; 
+	}
+	
+	/*adventure*/
+
+	.adventure__title {
+		font-size: 60px;
+	}
+
+	.adventure__description__text{
+		width: 90%;
+	}
+
+	.adventure__buttom__img {
+		max-width: 250px;
+	}
+	
+	.adventure__buttom__text {
+		top: 20px;
+	}
+
+}
